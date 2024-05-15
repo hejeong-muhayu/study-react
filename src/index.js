@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import NotificatiopnList from "./chapter_06/NotificatiopnList";
+import Accommodate from "./chapter_07/Accommodate"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NotificatiopnList />
+    <Accommodate />
   </React.StrictMode>
 );
 
