@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ConfirmButton from "./chapter_08/ConfirmButton";
+import LendingPage from "./chapter_09/LendingPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ConfirmButton />
+    <LendingPage />
   </React.StrictMode>
 );
 
