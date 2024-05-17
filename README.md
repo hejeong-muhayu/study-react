@@ -1,3 +1,10 @@
+
+리액트 공부하기
+
+react-soaple [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) 
+
+react-vlpt [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
