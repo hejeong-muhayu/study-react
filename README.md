@@ -1,9 +1,76 @@
 
-리액트 공부하기
+## 리액트 공부하기
+- [리액트 공식 홈페이지](https://reactjs-kr.firebaseapp.com/tutorial/tutorial.html)
 
-react-soaple [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) 
+참고 강의
+- [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) (react-soaple 폴더)
+- [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us) (react-vlpt 폴더)
 
-react-vlpt [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us)
+---
+
+### 리액트란 ?
+A JavaScript library fot building user interface
+
+사용자 인터페이스 구축을 위한 자바스크립트 라이브러리
+
+---
+
+### 리액트 시작하기
+
+
+node.js 설치 : https://nodejs.org/en
+
+
+    $ node --version
+    v20.13.1
+
+    $ npm --version
+    10.5.2
+
+    $ npx create-react-app [프로젝트 이름]
+    
+    $ npm start
+
+---
+
+리액트 시작하기전 ! 인텔리제이에 깔아둬야할 플러그인 
+
+[React snippets](https://plugins.jetbrains.com/plugin/10113-react-snippets)
+
+플러그인 - > 라이브 템플릿 -> React
+
+rsf
+
+
+
+---
+특이점
+
+    function UserList(users) { 
+        return (
+            <div>{users.map(user => (
+                <User user={user} key={user.id}></User>
+            ))}
+            </div>
+        );
+    }
+
+이렇게 쓰먄 에러남
+
+    function UserList({users}) {
+        return (
+            <div>{users.map(user => (
+            <User user={user} key={user.id}></User>
+            ))}
+            </div>
+        );
+    }
+
+users 에 {} 이렇게 씨줘야 에러가 안남
+
+
+---
+
 
 # Getting Started with Create React App
 
