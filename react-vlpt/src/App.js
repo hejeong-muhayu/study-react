@@ -22,8 +22,8 @@ function App() {
     ]);
 
     const [inputs, setInputs] = useState({
-        username:"",
-        email:""
+        username: "",
+        email: ""
     });
     const {username, email} = inputs;
     const nextId = useRef(4);
@@ -37,7 +37,7 @@ function App() {
     }
     const onCreate = () => {
         const user = {
-            id : nextId.current,
+            id: nextId.current,
             username: username,
             email: email
         }
@@ -52,9 +52,14 @@ function App() {
 
         nextId.current += 1;
     };
+
+    const onRemove = (id) => {
+        setUsers(users.filter(user => user.id !== id));
+    }
+
     return <div>
         <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate}></CreateUser>
-    <UserList users={users} />
+        <UserList users={users} onRemove={onRemove}/>
     </div>;
 }
 
