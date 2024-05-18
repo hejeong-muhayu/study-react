@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useMemo, useRef, useState} from 'react';
 import UserList from './UserList';
 import CreateUser from "./CreateUser";
 
@@ -7,19 +7,29 @@ function App() {
         {
             id: 1,
             username: 'velopert',
-            email: 'public.velopert@gmail.com'
+            email: 'public.velopert@gmail.com',
+            active:true
         },
         {
             id: 2,
             username: 'tester',
-            email: 'tester@example.com'
+            email: 'tester@example.com',
+            active: false
         },
         {
             id: 3,
             username: 'liz',
-            email: 'liz@example.com'
+            email: 'liz@example.com',
+            active: false
         }
     ]);
+
+    function countActiveUsers(users) {
+        console.log('활성 사용자 수를 세는중...');
+        return users.filter(user => user.active).length;
+    }
+    // const count = countActiveUsers(users);
+    const count = useMemo(() => countActiveUsers(users), [users]);
 
     const [inputs, setInputs] = useState({
         username: "",
@@ -57,9 +67,15 @@ function App() {
         setUsers(users.filter(user => user.id !== id));
     }
 
+    const onToggle = (id) => {
+      setUsers(
+          users.map(user => user.id === id ? {...user, active: !user.active} : user)
+      )
+    }
     return <div>
         <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate}></CreateUser>
-        <UserList users={users} onRemove={onRemove}/>
+        <UserList users={users} onRemove={onRemove} onToggle={onToggle}/>
+        <div>활성 사용자 수 ㅣ {count}</div>
     </div>;
 }
 
