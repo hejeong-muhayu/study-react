@@ -14,7 +14,7 @@ async function getUsers() {
 
 function Users(props) {
 
-    const [state, refetch] = useAsync(getUsers, [])
+    const [state, refetch] = useAsync(getUsers, [], true)
     const {loading, data: users, error} = state; // state.data 를 users 키워드로 조회
 
     if (loading)
@@ -22,7 +22,7 @@ function Users(props) {
     if (error)
         return <div>에러가 발생했습니다</div>;
     if (!users)
-        return null;
+        return <button onClick={refetch}>불러오기</button>;;
 
     return (
         <>
