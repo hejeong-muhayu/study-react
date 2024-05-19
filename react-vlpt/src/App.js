@@ -8,7 +8,7 @@ function App() {
             id: 1,
             username: 'velopert',
             email: 'public.velopert@gmail.com',
-            active:true
+            active: true
         },
         {
             id: 2,
@@ -28,6 +28,7 @@ function App() {
         console.log('활성 사용자 수를 세는중...');
         return users.filter(user => user.active).length;
     }
+
     // const count = countActiveUsers(users);
     const count = useMemo(() => countActiveUsers(users), [users]);
 
@@ -38,13 +39,13 @@ function App() {
     const {username, email} = inputs;
     const nextId = useRef(4);
 
-    const onChange = (e) => {
-        const {name, value} = e.target
-        setInputs({
+    const onChange = useCallback(e => {
+        const { name, value } = e.target;
+        setInputs(inputs => ({
             ...inputs,
             [name]: value
-        });
-    }
+        }));
+    }, []);
     const onCreate = useCallback(() => {
         const user = {
             id: nextId.current,
@@ -52,7 +53,7 @@ function App() {
             email: email
         }
         // setUsers([...users, user]); //spread 연산자로 배열 추가
-        setUsers(users.concat(user)); // concat 함수로 배열 추가 기존의 배열울 수정하지 않고 새로운 원소 추가
+        setUsers(users => users.concat(user)); // concat 함수로 배열 추가 기존의 배열울 수정하지 않고 새로운 원소 추가
 
 
         setInputs({
@@ -61,25 +62,23 @@ function App() {
         });
 
         nextId.current += 1;
-    },[users,username,email]);
+    }, [username, email]);
 
     const onRemove = useCallback(
         (id) => {
-            setUsers(users.filter(user => user.id !== id));
+            setUsers(users => users.filter(user => user.id !== id));
 
         },
-        [users],
+        [],
     );
 
 
-
     const onToggle = useCallback((id) => {
-      setUsers(
-          users.map(user => user.id === id ? {...user, active: !user.active} : user)
-      )
-    },[users]);
-
-
+        setUsers(
+            users=>
+                users.map(user => user.id === id ? {...user, active: !user.active} : user)
+        )
+    }, []);
     return <div>
         <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate}></CreateUser>
         <UserList users={users} onRemove={onRemove} onToggle={onToggle}/>
