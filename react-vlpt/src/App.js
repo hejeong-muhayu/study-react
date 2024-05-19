@@ -1,4 +1,4 @@
-import React, {useMemo, useRef, useState} from 'react';
+import React, {useCallback, useMemo, useRef, useState} from 'react';
 import UserList from './UserList';
 import CreateUser from "./CreateUser";
 
@@ -45,7 +45,7 @@ function App() {
             [name]: value
         });
     }
-    const onCreate = () => {
+    const onCreate = useCallback(() => {
         const user = {
             id: nextId.current,
             username: username,
@@ -61,17 +61,25 @@ function App() {
         });
 
         nextId.current += 1;
-    };
+    },[users,username,email]);
 
-    const onRemove = (id) => {
-        setUsers(users.filter(user => user.id !== id));
-    }
+    const onRemove = useCallback(
+        (id) => {
+            setUsers(users.filter(user => user.id !== id));
 
-    const onToggle = (id) => {
+        },
+        [users],
+    );
+
+
+
+    const onToggle = useCallback((id) => {
       setUsers(
           users.map(user => user.id === id ? {...user, active: !user.active} : user)
       )
-    }
+    },[users]);
+
+
     return <div>
         <CreateUser username={username} email={email} onChange={onChange} onCreate={onCreate}></CreateUser>
         <UserList users={users} onRemove={onRemove} onToggle={onToggle}/>
