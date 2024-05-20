@@ -5,7 +5,9 @@
 참고 강의
 - [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) (react-soaple 폴더)
 - [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us) (react-vlpt 폴더)
-
+  - styling-with-sass : 2. 리액트 컴포넌트 스타일링 하기 with Sass
+  - todo-list : 3. todo 리스트 만들기
+  - api-integrate : 4. api 연동 (axios)
 ---
 
 ### 리액트란 ?
@@ -19,7 +21,7 @@ A JavaScript library fot building user interface
 
 
 node.js 설치 : https://nodejs.org/en
-
+```
 
     $ node --version
     v20.13.1
@@ -30,7 +32,7 @@ node.js 설치 : https://nodejs.org/en
     $ npx create-react-app [프로젝트 이름]
     
     $ npm start
-
+```
 ---
 
 리액트 시작하기전 !
@@ -91,7 +93,7 @@ Hook 이란 ?
 2. useEffect - side effect 수행 (mount(처음나타났을때)/unmount(사라질때)/update)
 3. useContext - 컴포넌트를 중첩하지 않고 전역값을 쉽게 관리
 추가 Hook
-4. useReducer - 복잡한 컴포넌트들의 state를 관리 - 분리
+4. useReducer - 복잡한 컴포넌트들의 state를 관리 - 로직 분리
 5. useMemo - 연산한 값 재사용
 6. useCallback - 특정 함수 재사용
 7. useRef - DOM선택, Component 안에서 조회/수정 할 수 있는 변수 관리
@@ -116,7 +118,7 @@ state 는 직접 수정하면 안됨
 
 #### useState 
 
-
+```
     import {useState} from "react";
   
     function useCounter(initialValue) {
@@ -130,6 +132,8 @@ state 는 직접 수정하면 안됨
     }
     
     export default useCounter;
+```
+
 
 
 #### useReducer
