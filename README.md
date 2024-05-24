@@ -143,7 +143,7 @@ reducer 는 현재 상태와 액션 객체를 파라미터로 받아와서 새�
 컴포넌트에 관리하는 값이 딱 하나이고 그 값이 단순한 숫자, 문자열, boolean 값이라면 useSate
 컴포넌트에서 관리하는 값이 여러개가 되어서 상태의 구조가 복잡해 진다면 useReducer
 
-
+1일 1커밋하고픈데... 
 ## 라이브러리
 ```
  $ npm add node-sass react-icons styled-components axios classnames
