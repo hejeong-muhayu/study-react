@@ -148,6 +148,8 @@ reducer 는 현재 상태와 액션 객체를 파라미터로 받아와서 새�
 ```
  $ npm add node-sass react-icons styled-components axios classnames
  $ npm add react-bootstrap bootstrap
+ $ npm add redux
+ $ npm add @redux-devtools/extension
 ```
 
 - [node-sass]()
@@ -156,3 +158,7 @@ reducer 는 현재 상태와 액션 객체를 파라미터로 받아와서 새�
 - [classnames](https://github.com/JedWatson/classnames) :
 - [axios](https://github.com/axios/axios) : API 요청
 - [bootstrap](https://react-bootstrap.netlify.app/) : 부트스트랩
+
+
+-[@redux-devtools/extension](https://www.npmjs.com/package/@redux-devtools/extension) : 리덕스 개발자 도구
+=>https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?pli=1 
