@@ -1,21 +1,50 @@
 
-## 리액트 공부하기
+# 리액트
 - [리액트 공식 홈페이지](https://ko.legacy.reactjs.org/docs/getting-started.html)
 
-참고 강의
-- [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) (react-soaple 폴더)
-- [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us) (react-vlpt 폴더)
-  - styling-with-sass : 2. 리액트 컴포넌트 스타일링 하기 with Sass
-  - todo-list : 3. todo 리스트 만들기
-  - api-integrate : 4. api 연동 (axios)
 ---
 
 ### 리액트란 ?
+
 A JavaScript library fot building user interface
 
 사용자 인터페이스 구축을 위한 자바스크립트 라이브러리
 
 ---
+
+## 참고글
+- [2024년에 리액트 프로젝트 시작하는법](https://velog.io/@lky5697/react-starter?utm_source=substack&utm_medium=email#next와-리액트)
+- [2024 리액트 라이브러리](https://ykss.netlify.app/translation/react_libraries_for_2024/?utm_source=substack&utm_medium=email#리액트를-위한-패키지-매니저)
+
+#### 리액트 시작하기
+- 라이브러리 : React
+- 빌드 도구 : vite
+- 프레임워크 : next.js
+- 프로그래밍 언어 : typescript
+- 상태관리 : Redux // -> Zustand 를 요새 많이 쓴다고함
+- 패키지매니저 : npm
+
+처음엔 무슨.. create-react-app 으로 프로젝트를 만들었는데, 만들고 보니 타입스크립트를 사용하고,,
+타입스크립트로 다시 만들고 보니 create-react-app --typescript 
+무슨 빌드도구 vite로 사용하고 있다해서 npm create vite@latest 로 프로젝트 만들었더니
+
+요새는 다들 next.js 를 많이쓴단다.
+npx create-next-app@latest my-next-app 로 next.js 프로젝트를 만들고 그다음에
+npm init vite@latest 한담에 또 뭘해줘야한다는데 
+
+react vite next.js typescript 로 프로젝트 만들어야하나 ,,,
+
+
+
+### 참고 강의
+- [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) (react-soaple 폴더)
+- [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us) (react-vlpt 폴더)
+  - styling-with-sass : 2. 리액트 컴포넌트 스타일링 하기 with Sass
+  - todo-list : 3. todo 리스트 만들기
+  - api-integrate : 4. api 연동 (axios)
+
+
+
 
 ### 리액트 시작하기
 
