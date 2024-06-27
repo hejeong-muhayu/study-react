@@ -1,10 +1,12 @@
-function Post() {
+import classes from "./Post.module.css";
 
-    return<div>
-        <p>
-            React.js is awesome!
-        </p>
-    </div>
+function Post(props) {
+    return (
+        <div className={classes.post}>
+                <p className={classes.author}>{props.author}</p>
+                <p className={classes.text}>{props.body}</p>
+        </div>
+    )
 }
 
 export default Post
