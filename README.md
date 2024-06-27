@@ -12,37 +12,33 @@ A JavaScript library fot building user interface
 
 ---
 
-## 참고글
-- [2024년에 리액트 프로젝트 시작하는법](https://velog.io/@lky5697/react-starter?utm_source=substack&utm_medium=email#next와-리액트)
-- [2024 리액트 라이브러리](https://ykss.netlify.app/translation/react_libraries_for_2024/?utm_source=substack&utm_medium=email#리액트를-위한-패키지-매니저)
+- [[번역] 2024년에 리액트 프로젝트 시작하는법](https://velog.io/@lky5697/react-starter)
+- [[번역] 2024 리액트 트렌드](https://ykss.netlify.app/translation/react_trends_in_2024/)
+- [[번역] 2024 리액트 라이브러리](https://ykss.netlify.app/translation/react_libraries_for_2024/)
 
-#### 리액트 시작하기
-- 라이브러리 : React
-- 빌드 도구 : vite
-- 프레임워크 : next.js
-- 프로그래밍 언어 : typescript
-- 상태관리 : Redux // -> Zustand 를 요새 많이 쓴다고함
-- 패키지매니저 : npm
 
-처음엔 무슨.. create-react-app 으로 프로젝트를 만들었는데, 만들고 보니 타입스크립트를 사용하고,,
-타입스크립트로 다시 만들고 보니 create-react-app --typescript 
-무슨 빌드도구 vite로 사용하고 있다해서 npm create vite@latest 로 프로젝트 만들었더니
-
-요새는 다들 next.js 를 많이쓴단다.
-npx create-next-app@latest my-next-app 로 next.js 프로젝트를 만들고 그다음에
-npm init vite@latest 한담에 또 뭘해줘야한다는데 
-
-react vite next.js typescript 로 프로젝트 만들어야하나 ,,,
-
+> - 라이브러리 : [React](https://reactjs-kr.firebaseapp.com/)
+- 패키지매니저 : [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/))
+- 빌드 도구 : [vite](https://ko.vitejs.dev/)
+- 프레임워크 : [next.js](https://nextjs.org/) (or Remix)
+- 프로그래밍 언어 : [typescript](https://www.typescriptlang.org/)
+- 리액트 라이브러리
+  - 상태관리 : [Redux](https://ko.redux.js.org/) (or [Zustand](https://github.com/pmndrs/zustand) = 간편하다고 함)
+  - 데이터패칭 : [TanStack Query]()
 
 
 ### 참고 강의
-- [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) (react-soaple 폴더)
-- [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us) (react-vlpt 폴더)
+- [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) (study-soaple 폴더)
+- [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us) (study-vlpt 폴더)
   - styling-with-sass : 2. 리액트 컴포넌트 스타일링 하기 with Sass
   - todo-list : 3. todo 리스트 만들기
   - api-integrate : 4. api 연동 (axios)
-
+  - learn-redux :
+  - learn-redux-middleware :
+  - todo-list
+- [[유데미]next-js](https://www.udemy.com/course/nextjs-react-incl-two-paths/?couponCode=ST18MT62524)
+  - first-app
+  - 
 
 
 
@@ -172,7 +168,6 @@ reducer 는 현재 상태와 액션 객체를 파라미터로 받아와서 새�
 컴포넌트에 관리하는 값이 딱 하나이고 그 값이 단순한 숫자, 문자열, boolean 값이라면 useSate
 컴포넌트에서 관리하는 값이 여러개가 되어서 상태의 구조가 복잡해 진다면 useReducer
 
-1일 1커밋하고픈데... 
 ## 라이브러리
 ```
  $ npm add node-sass react-icons styled-components axios classnames
