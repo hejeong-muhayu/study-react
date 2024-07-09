@@ -1,44 +1,43 @@
 
 # 리액트
-- [리액트 공식 홈페이지](https://ko.legacy.reactjs.org/docs/getting-started.html)
 
 ---
 
 ### 리액트란 ?
 
-A JavaScript library fot building user interface
 
-사용자 인터페이스 구축을 위한 자바스크립트 라이브러리
+> A JavaScript library fot building user interface
+> 
+> 사용자 인터페이스 구축을 위한 자바스크립트 라이브러리
 
 ---
 
+
+- [리액트 공식 문서(과거)](https://ko.legacy.reactjs.org/)
+- [리액트 공식 문서](https://ko.react.dev/)
+
+
+### 참고글
 - [[번역] 2024년에 리액트 프로젝트 시작하는법](https://velog.io/@lky5697/react-starter)
 - [[번역] 2024 리액트 트렌드](https://ykss.netlify.app/translation/react_trends_in_2024/)
 - [[번역] 2024 리액트 라이브러리](https://ykss.netlify.app/translation/react_libraries_for_2024/)
 
 
 > - 라이브러리 : [React](https://reactjs-kr.firebaseapp.com/)
-- 패키지매니저 : [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/))
-- 빌드 도구 : [vite](https://ko.vitejs.dev/)
-- 프레임워크 : [next.js](https://nextjs.org/) (or Remix)
-- 프로그래밍 언어 : [typescript](https://www.typescriptlang.org/)
-- 리액트 라이브러리
-  - 상태관리 : [Redux](https://ko.redux.js.org/) (or [Zustand](https://github.com/pmndrs/zustand) = 간편하다고 함)
-  - 데이터패칭 : [TanStack Query]()
+> - 패키지매니저 : [npm](https://www.npmjs.com/) (or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/))
+> - 빌드 도구 : [vite](https://ko.vitejs.dev/)
+> - 프레임워크 : [next.js](https://nextjs.org/) (or Remix)
+> - 프로그래밍 언어 : [typescript](https://www.typescriptlang.org/)
+> - 리액트 라이브러리
+>  - 상태관리 : [Redux](https://ko.redux.js.org/) (or [Zustand](https://github.com/pmndrs/zustand) = 간편하다고 함)
+>  - 데이터패칭 : [TanStack Query]()
 
 
 ### 참고 강의
 - [소플 처음부터 만난 리액트](https://www.inflearn.com/course/처음-만난-리액트) (study-soaple 폴더)
 - [벨로퍼트와 함꼐하는 모던 리액트](https://react.vlpt.us) (study-vlpt 폴더)
-  - styling-with-sass : 2. 리액트 컴포넌트 스타일링 하기 with Sass
-  - todo-list : 3. todo 리스트 만들기
-  - api-integrate : 4. api 연동 (axios)
-  - learn-redux :
-  - learn-redux-middleware :
-  - todo-list
-- [[유데미]next-js](https://www.udemy.com/course/nextjs-react-incl-two-paths/?couponCode=ST18MT62524)
-  - first-app
-  - 
+- (유료) [[유데미]next-js](https://www.udemy.com/course/nextjs-react-incl-two-paths)
+- (유료) [제로초 SNS 클론 코딩](https://www.inflearn.com/course/next-react-query-sns)
 
 
 
