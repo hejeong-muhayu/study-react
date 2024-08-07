@@ -1,8 +1,23 @@
+import Avatar from './Avatar.jsx';
+
+function Card({ children }) {
+    return (
+        <div className="card">
+            {children}
+        </div>
+    );
+}
+
 export default function Profile() {
     return (
-        <img
-            src="https://i.imgur.com/QIrZWGIs.jpg"
-            alt="Alan L. Hart"
-        />
+        <Card>
+            <Avatar
+                size={100}
+                person={{
+                    name: 'Katsuko Saruhashi',
+                    imageId: 'YfeOqp2'
+                }}
+            />
+        </Card>
     );
 }
