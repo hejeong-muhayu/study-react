@@ -1,6 +1,15 @@
 
 # 리액트
 
+study 내용
+
+```cmd
+|-- official-document // 공식문서 읽기
+|-- study-Maximilian-Schwarzmüller // next-js 강의
+|-- study-soaple // 소플 처음부터 만난 리액트
+|-- study-vlpt // 벨로퍼트와 함꼐하는 모던 리액트
+|-- x-com // 제로초 SNS 클론 코딩
+```
 ---
 
 ### 리액트란 ?
@@ -33,8 +42,8 @@
 > - 프레임워크 : [next.js](https://nextjs.org/) (or Remix)
 > - 프로그래밍 언어 : [typescript](https://www.typescriptlang.org/)
 > - 리액트 라이브러리
->  - 상태관리 : [Redux](https://ko.redux.js.org/) (or [Zustand](https://github.com/pmndrs/zustand) = 간편하다고 함)
->  - 데이터패칭 : [TanStack Query]()
+>   - 상태관리 : [Redux](https://ko.redux.js.org/) or [Zustand](https://github.com/pmndrs/zustand) or [Recoil](https://recoiljs.org/ko/docs/introduction/getting-started/)
+>   - 데이터패칭 : [TanStack Query](https://tanstack.com/query/latest)
 
 
 ### 참고 강의
@@ -44,24 +53,7 @@
 - (유료) [제로초 SNS 클론 코딩](https://www.inflearn.com/course/next-react-query-sns)
 
 
-
 ### 리액트 시작하기
-
-
-node.js 설치 : https://nodejs.org/en
-```
-
-    $ node --version
-    v20.13.1
-
-    $ npm --version
-    10.5.2
-
-    $ npx create-react-app [프로젝트 이름]
-    
-    $ npm start
-```
----
 
 리액트 시작하기전 !
 
@@ -78,9 +70,6 @@ node.js 설치 : https://nodejs.org/en
 ---
 
 ---
-
-
-
 
 #### useReducer
 reducer 는 현재 상태와 액션 객체를 파라미터로 받아와서 새로운 상태를 반환해주는 함수입니다.
