@@ -4,6 +4,7 @@ import TodoList from "./ui표현하기/TodoList.jsx";
 import Profile from "./ui표현하기/Profile.jsx";
 import PackingList from "./ui표현하기/PackingList.jsx";
 import List from "./ui표현하기/List.jsx";
+import TeaGathering from './ui표현하기/TeaGathering.jsx';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Profile/>
         <PackingList/>
         <List/>
+        <TeaGathering/>
     </>
   )
 }
